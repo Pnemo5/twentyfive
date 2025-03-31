@@ -1,0 +1,698 @@
+body{
+    margin: 0%;
+}
+
+
+@media screen and (max-width:599px) {
+
+    /*HOMEPAGE MOBILE*/
+    body{
+        background-color: rgba(249,220,190,255);
+    }
+    
+    #header1{
+        display: grid;
+        grid-template-columns: 20vw 60vw 1fr;
+        grid-template-rows: 100vh;
+        grid-template-areas: 
+        'mn hd ic';
+        background-image: url(/img/Kasjon_brygga_mobil.jpg);
+        box-shadow: inset 0 0 15px black;
+        background-size: cover;
+        height: 100vh;
+        width: auto;
+        
+    }
+    #heading1{
+        display: flex;
+        grid-area: hd;
+        color: black;
+        text-decoration: none;
+        background-color: rgba(255, 239, 218, 0.5);
+        width: 60vw;
+        height: 20vh;
+        opacity: 100%;
+        font-size: 4rem;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+    }
+    nav{
+        height: 10vh;
+
+    }
+    #listchoices{
+        display: grid;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: stretch;
+        align-content: stretch;
+        padding: 0%;
+        margin: 0%;
+    }
+    .navchoice{
+        text-decoration: none;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        border-top: solid black 2px;
+        padding: 2%;
+    }
+    .menu{
+        background-color: rgba(150,167,187,255);
+        display: flex;
+        position: fixed;
+        height: 80vh;
+        width: 100vw;
+        top: 0;
+        left: -100vw;
+        transition: left 0.3s;
+        z-index: 10;
+    }
+    .menu-button{
+        grid-area: mn;
+        cursor: pointer;
+        display: inline;
+        align-self: start;
+        justify-self: start;
+    }
+    #icon{
+        grid-area: ic;
+    }
+    #burgermenu {
+        font-size: 60px;
+    }
+    .show{
+        left: 0;
+    }
+    .fade-layer{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 5;
+    }
+    .fade-layer.visible{
+        display: block;
+    }
+    #main1{
+        height: 30vh;
+        display: grid;
+        background-color: rgba(249,220,190,255);
+
+    }
+    #page1header{
+        font-size: 2rem;
+        margin-top: 20px;
+        margin-bottom: 0%;
+        justify-self: center;
+    }
+    #page1text{
+        margin: 0%;
+        padding: 5%;
+        text-align: center;
+
+    }
+    #sections{
+        background-image: url(/img/wood.png);
+        box-shadow: inset 0 0 15px black;
+
+    }
+    .about{
+        height: 40vh;
+        display: grid;
+        grid-template-columns: 50% 1fr;
+        background-image: url(/img/Kasjon_dimma.jpg);
+        margin: 8%;
+        background-color: green;
+        background-size: cover;
+        justify-items: center;
+        align-items: end;
+    }
+    .circletext{
+        display: flex;
+        color: black;
+        text-decoration: none;
+        background-color: rgb(180, 180, 180);
+        border-radius: 20%;
+        font-size: larger;
+        width: 150px;
+        height: 50px;
+        box-shadow: 5px 0px 21px -10px black;
+        justify-content: center;
+        align-items: center;
+        margin: 20%;
+    }
+
+    .nature{
+        height: 40vh;
+        display: grid;
+        color: black;
+        text-decoration: none;
+        background-image: url(/img/kasjon_spegel.jpg);
+        background-size: cover;
+        margin: 8%;
+        grid-template-columns: 50% 1fr;
+        justify-items: center;
+        align-items: end;
+    }
+    .activities{
+        height: 40vh;
+        color: black;
+        text-decoration: none;
+        margin: 8%;
+        background-image: url(/img/kasjon_batar.jpg);
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 50% 1fr;
+        justify-items: center;
+        align-items: end;
+    }
+    footer{
+        display: grid;
+        height: 20vh;
+        background-color: rgba(249,220,190,255);
+        grid-template-columns: 30% 37% 1fr;
+    }
+    #partille{
+        height: 60%;
+        justify-self: center;
+        align-self: center;
+    }
+    #footer_text{
+        align-self: end;
+        font-size: 200%;
+    }
+    #icons{
+        height:30px;
+        align-self: end;
+        justify-self: start;
+        padding-bottom: 25%;
+    }
+    
+
+    #homepicturebigger{
+        display: hidden;
+    }
+
+    /*ABOUT MOBILE*/
+    #header2{
+        height: 10vh;
+        /*display: grid;
+        grid-template-columns: 20vw 40vw 1fr;*/
+        background-color: rgb(141, 121, 95);
+    }
+    #heading2{
+        text-decoration: none;
+        color: black;
+        font-size: 3rem;
+    }
+    #wrapper2{
+        background-color: rgba(249,220,190,255);
+        padding: 3%;
+    }
+    #content2{
+        background-color: rgb(141, 121, 95);
+        padding: 5%;
+    }
+    #main2{
+        display: grid;
+        grid-template-rows: 40% 40% 1fr;
+        grid-template-areas: 
+        'text1'
+        'img'
+        'text2';
+        height: 80vh;
+        background-image: url(/img/wood.png);
+        box-shadow: inset 0 0 15px black;
+    }
+    #kasjon_karta{
+        width: 80%;
+        justify-self: center;
+        align-self: center;
+        border: solid 2px rgb(141, 121, 95);
+        border-radius: 10%;
+        background-size: cover;
+    }
+    .maintext2{
+        text-align: center;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #wrapper_smalltext1{
+        background-color:antiquewhite;
+        border: solid 2px rgb(141, 121, 95);
+        padding: 2%;
+        margin: 5%;
+    }
+    #smalltext1{
+        height: 100%;
+        grid-area: text1;
+        overflow: auto;
+        margin: 0%;
+    }
+    #smalltext2{
+        grid-area: text2;
+        overflow: auto;
+        margin-right: 5%;
+    }
+    #funfacts2{
+        display: grid;
+        height: 60vh;
+        grid-template-columns: 50% 1fr;
+        grid-template-rows: 10% 45% 45%;
+        grid-template-areas:
+        'rbfc rbfc';
+        margin: 3%;
+        margin-top: 8%;
+    }
+    #rubrik_facts{
+        grid-area: rbfc;
+        justify-self: center;
+        margin: 0%;
+    }
+    .fact_and_text2{
+        text-align: center;
+    }
+    .fact_icons{
+        justify-self: center;
+        height: 50%;
+    }
+    #nyheter2{
+        display: grid;
+        grid-template-rows: 5% 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        'hdr';
+        height: auto;
+        background-image: url(/img/wood.png);
+        box-shadow: inset 0 0 15px black;
+        padding: 3%;
+    }
+    #nyheter{
+        grid-area: hdr;
+        margin: 0%;
+        font-size:170%;
+    }
+    #allnews{
+        display: grid;
+        align-content: space-between;
+    }
+    .news_wrapper{
+        display: grid;
+        height: auto;
+        border: solid 2px rgb(141, 121, 95);
+        border-radius: 10%;
+        background-color: antiquewhite;
+        padding: 3%;
+        margin: 3%;
+    }
+    .news{
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-template-rows: 20% 1fr;
+        grid-template-areas:
+        'rub arr'
+        'new arr';
+        background-color: rgba(249,220,190,255);
+        border: dotted 2px rgb(141, 121, 95);
+        border-radius: 10%;
+        padding: 3%;
+    }
+    .nyhetsrubrik{
+        margin: 0%;
+        align-self: center;
+    }
+    .nyhetstext{
+        overflow: auto;
+    }
+    .arrow_icon2{
+        grid-area: arr;
+        width: 50%;
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HOMEPAGE DESKTOP*/
+@media screen and (min-width:600px) {
+    body{
+        background-color: rgba(249,220,190,255);
+    }
+    #header1{
+        display: grid;
+        grid-template-columns: 20vw 60vw 1fr;
+        grid-template-rows: 100vh;
+        grid-template-areas: 
+        'mn hd ic';
+        background-image: url(/img/Kasjon_brygga.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #heading1{
+        display: flex;
+        grid-area: hd;
+        background-color: rgba(255, 239, 218, 0.5);
+        color: black;
+        text-decoration: none;
+        width: 60vw;
+        height: 30vh;
+        font-size: 4rem;
+        justify-content: center;
+        align-items: center;
+        opacity: 100%;
+    }
+    .menu-button{
+        grid-area: mn;
+        display: inline;
+        align-self: start;
+        justify-self: start;
+    }
+    #listchoices{
+        display: grid;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: stretch;
+        align-content: stretch;
+        padding: 0%;
+        margin: 0%;
+    }
+    .navchoice{
+        text-decoration: none;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        border-top: solid black 2px;
+        padding: 2%;
+    }
+    .menu{
+        background-color: rgba(150,167,187,255);
+        display: flex;
+        position: fixed;
+        height: 80vh;
+        width: 100vw;
+        top: 0;
+        left: -100vw;
+        transition: left 0.3s;
+        z-index: 10;
+    }
+    .menu-button{
+        grid-area: mn;
+        cursor: pointer;
+        display: inline;
+        align-self: start;
+        justify-self: start;
+    }
+    #icon{
+        grid-area: ic;
+    }
+    #burgermenu {
+        font-size: 60px;
+    }
+    .show{
+        left: 0;
+    }
+    .fade-layer{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 5;
+    }
+    .fade-layer.visible{
+        display: block;
+    }
+    #content1{
+        height: auto;
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        margin: 3% 3% 0% 0%;
+    }
+    #main1{
+        height: 30vh;
+        background-color: rgba(249,220,190,255);
+
+    }
+    #page1header{
+        font-size: 2rem;
+        margin-top: 20px;
+        margin-bottom: 0%;
+        justify-self: center;
+    }
+    #page1text{
+        margin: 0%;
+        padding: 5%;
+        text-align: center;
+
+    }
+    #sections{
+        background-image: url(/img/wood.png);
+        box-shadow: inset 0 0 15px black;
+    }
+    .about{
+        height: 40vh;
+        display: grid;
+        grid-template-columns: 50% 1fr;
+        background-image: url(/img/Kasjon_dimma.jpg);
+        margin: 8%;
+        background-color: green;
+        background-size: cover;
+        justify-items: center;
+        align-items: end;
+    }
+    .circletext{
+        display: flex;
+        color: black;
+        text-decoration: none;
+        background-color: rgb(180, 180, 180);
+        border-radius: 20%;
+        font-size: larger;
+        width: 150px;
+        height: 50px;
+        box-shadow: 5px 0px 21px -10px black;
+        justify-content: center;
+        align-items: center;
+        margin: 20%;
+    }
+    .nature{
+        height: 40vh;
+        display: grid;
+        color: black;
+        text-decoration: none;
+        background-image: url(/img/kasjon_spegel.jpg);
+        background-size: cover;
+        margin: 8%;
+        grid-template-columns: 50% 1fr;
+        justify-items: center;
+        align-items: end;
+        
+    }
+    .activities{
+        height: 40vh;
+        color: black;
+        text-decoration: none;
+        margin: 8%;
+        background-image: url(/img/kasjon_batar.jpg);
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 50% 1fr;
+        justify-items: center;
+        align-items: end;
+
+    }
+    footer{
+        display: grid;
+        height: 20vh;
+        background-color: rgba(249,220,190,255);
+        grid-template-columns: 12% 60% 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'shield txt icon';
+    }
+    #partille{
+        grid-area: shield;
+        height: 60%;
+        justify-self: center;
+        align-self: center;
+    }
+    #footer_text{
+        grid-area: txt;
+        align-self: end;
+        font-size: 200%;
+    }
+    #icons{
+        grid-area: icon;
+        height: 80px;
+        align-self: end;
+        justify-self: start;
+        padding-bottom: 5%;
+    }
+
+    /*ABOUT DESKTOP*/
+    #header2{
+        height: 10vh;
+        /*display: grid;
+        grid-template-columns: 20vw 40vw 1fr;*/
+        background-color: rgb(141, 121, 95);
+    }
+    #heading2{
+        text-decoration: none;
+        color: black;
+        font-size: 3rem;
+    }
+    #wrapper2{
+        background-color: rgba(249,220,190,255);
+        padding: 3%;
+    }
+    #content2{
+        background-color: rgb(141, 121, 95);
+        padding: 5%;
+    }
+    #main2{
+        display: grid;
+        grid-template-columns: 50% 1fr;
+        grid-template-rows: 70% 1fr;
+        grid-template-areas: 
+        'text1 img'
+        'text2 text2';
+        height: 60vh;
+        background-image: url(/img/wood.png);
+        box-shadow: inset 0 0 15px black;
+        padding: 2%;
+    }
+    #kasjon_karta{
+        height: 90%;
+        align-self: center;
+        justify-self: center;
+        border: solid 2px rgb(141, 121, 95);
+        border-radius: 10%;
+        background-size: cover;
+    }
+    #wrapper_smalltext1{
+        background-color:antiquewhite;
+        border: solid 2px rgb(141, 121, 95);
+        padding: 2%;
+    }
+    .maintext2{
+        display: flex;
+        height: 50%;
+    }
+    #smalltext1{
+        height: 100%;
+        font-size:x-large;
+        grid-area: text1;
+        overflow:auto;
+        margin: 0%;
+    }
+    #smalltext2{
+        font-size:larger;
+        grid-area: text2;
+        text-align: center;
+        align-self: center;
+    }
+    #funfacts2{
+        display: grid;
+        height: 60vh;
+        grid-template-columns: 25% 25% 25% 1fr;
+        grid-template-rows: 15% 85%;
+        grid-template-areas:
+        'rbfc rbfc rbfc rbfc';
+        margin: 3%;
+        margin-top: 8%;
+    }
+    #rubrik_facts{
+        grid-area: rbfc;
+        justify-self: center;
+        margin: 0%;
+    }
+    .fact_and_text2{
+        padding: 5%;
+        text-align: center;
+    }
+    .fact_icons{
+        justify-self: center;
+        height: 50%;
+    }
+    #nyheter2{
+        display: grid;
+        grid-template-columns: 50% 1fr;
+        grid-template-rows: 10% 1fr 1fr;
+        grid-template-areas:
+        'hdr hdr';
+        height: auto;
+        background-image: url(/img/wood.png);
+        box-shadow: inset 0 0 15px black;
+        padding: 3%;
+    }
+    #nyheter{
+        grid-area: hdr;
+        margin: 0%;
+        font-size:xx-large;
+    }
+    #allnews{
+        display: grid;
+        align-content: space-between;
+    }
+    .news_wrapper{
+        display: grid;
+        height: auto;
+        border: solid 2px rgb(141, 121, 95);
+        border-radius: 10%;
+        background-color: antiquewhite;
+        padding: 3%;
+        margin: 3%;
+    }
+    .news{
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-template-rows: 20% 1fr;
+        grid-template-areas:
+        'rub arr'
+        'new arr';
+        background-color: rgba(249,220,190,255);
+        border: dotted 2px rgb(141, 121, 95);
+        border-radius: 10%;
+        padding: 3%;
+    }
+    .nyhetsrubrik{
+        margin: 0%;
+        align-self: center;
+    }
+    .nyhetstext{
+        overflow: auto;
+    }
+    .arrow_icon2{
+        grid-area: arr;
+        width: 50%;
+        justify-self: center;
+        align-self: center;
+    }
+}
+
