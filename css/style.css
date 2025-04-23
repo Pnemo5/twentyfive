@@ -61,8 +61,8 @@ body{
         background-color: rgba(150,167,187);
         display: flex;
         position: fixed;
-        height: 80vh;
-        width: 100vw;
+        height: 100vh;
+        width: 40vw;
         top: 0;
         left: -100vw;
         transition: left 0.3s;
@@ -115,27 +115,52 @@ body{
         text-align: center;
 
     }
+    #shadow_box{
+        padding: 3%;
+        box-shadow: inset 0 0 5px black;
+
+    }
+    #wrapper1{
+        height: auto;
+        padding: 5%;
+        background-color: rgb(187, 163, 132);
+
+    }
     #sections{
         background-image: url(/img/wood.png);
         box-shadow: inset 0 0 15px black;
 
     }
-    .about{
-        height: 40vh;
-        display: grid;
-        grid-template-columns: 50% 1fr;
-        background-image: url(/img/Kasjon_dimma.jpg);
-        margin: 8%;
-        background-color: green;
-        background-size: cover;
-        justify-items: center;
+    .pictures_firstpage{
+        margin: 3%;
+        padding: 2%;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        width: 90%;
+        border: solid 2px rgb(187, 163, 132);
+        border-radius: 20%;
+        background-color: antiquewhite;
+    }
+    #about{
+        display: flex;
         align-items: end;
     }
+    #nature{
+        display: flex;
+        align-items: end;
+    }
+    #fishing{
+        display: flex;
+        align-items: end;
+    }
+
     .circletext{
         display: flex;
         color: black;
+        position: absolute;
         text-decoration: none;
-        background-color: rgb(180, 180, 180);
+        background-color: rgba(255, 239, 218, 0.5);
         border-radius: 10%;
         font-size: larger;
         width: 150px;
@@ -143,10 +168,10 @@ body{
         box-shadow: 5px 0px 21px -10px black;
         justify-content: center;
         align-items: center;
-        margin: 20%;
+        margin: 10%;
     }
 
-    .nature{
+    /*.nature{
         height: 40vh;
         display: grid;
         color: black;
@@ -169,7 +194,7 @@ body{
         grid-template-columns: 50% 1fr;
         justify-items: center;
         align-items: end;
-    }
+    }*/
     footer{
         display: grid;
         height: 20vh;
@@ -191,11 +216,11 @@ body{
         justify-self: start;
         padding-bottom: 25%;
     }
-    
-
     #homepicturebigger{
         display: none;
     }
+
+
 
     /*ABOUT MOBILE*/
     #header2{
@@ -209,9 +234,10 @@ body{
         color: black;
         font-size: 3rem;
     }
-    #wrapper2{
+    .wrapper2{
         background-color: rgba(249,220,190);
         padding: 3%;
+        box-shadow: inset 0 0 5px black;
     }
     #content2{
         background-color: rgb(187, 163, 132);
@@ -333,6 +359,47 @@ body{
         justify-self: center;
         align-self: center;
     }
+
+
+
+    /*HIKING MOBILE*/
+    #main3{
+        height: 40vh;
+    }
+    #content3{
+        display: grid;
+        align-content: space-between;
+        background-color: rgb(187, 163, 132);
+        height: 250vh;
+        padding: 5%;
+    }
+    .hikingpaths{
+        display: grid;
+        height: auto;
+        align-items: stretch;
+        background-image: url(/img/wood.png);
+        box-shadow: inset 0 0 15px black;
+    }
+    .border_info_hikingpath{
+        display: grid;
+        border: solid 2px rgb(187, 163, 132);
+        border-radius: 10%;
+        background-color: antiquewhite;
+        padding: 3%;
+        margin: 5%;
+    }
+    .info_hikingpath{
+        background-color: rgba(249, 220, 190);
+        border: dotted 2px rgb(187, 163, 132);
+        border-radius: 10%;
+        padding: 3%;
+    }
+    .hikingpictures{
+        display: flex;
+        width: 100%;
+        border-radius: 10%;
+    }
+
 }
 
 
@@ -449,14 +516,20 @@ body{
     .fade-layer.visible{
         display: block;
     }
+    #wrapper{
+        padding: 2%;
+        box-shadow: inset 0 0 5px black;
+    }
     #content1{
         height: auto;
         display: grid;
         grid-template-columns: 40% 1fr;
-        margin: 3% 3% 0% 0%;
+        background-color: rgb(187, 163, 132);
+        box-shadow: inset 0 0 5px black;
     }
     #main1{
-        height: 30vh;
+        margin: 3%;
+        height: auto;
         background-color: rgba(249,220,190);
 
     }
@@ -472,7 +545,62 @@ body{
         text-align: center;
 
     }
+    #shadow_box{
+        padding: 2%;
+        border-left: rgb(102, 88, 70) 2px solid;
+
+    }
+    #wrapper1{
+        height: auto;
+        padding: 2%;
+        background-color: rgb(187, 163, 132);
+
+    }
     #sections{
+        background-image: url(/img/wood.png);
+        box-shadow: inset 0 0 15px black;
+
+    }
+    .pictures_firstpage{
+        margin: 3%;
+        padding: 2%;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        width: 90%;
+        border: solid 2px rgb(187, 163, 132);
+        border-radius: 20%;
+        background-color: antiquewhite;
+    }
+    #about{
+        display: flex;
+        align-items: end;
+    }
+    #nature{
+        display: flex;
+        align-items: end;
+    }
+    #fishing{
+        display: flex;
+        align-items: end;
+    }
+
+    .circletext{
+        display: flex;
+        color: black;
+        position: absolute;
+        text-decoration: none;
+        background-color: rgba(255, 239, 218, 0.8);
+        border-radius: 10%;
+        font-size: larger;
+        width: 200px;
+        height: 75px;
+        box-shadow: 5px 0px 21px -10px black;
+        justify-content: center;
+        align-items: center;
+        margin: 7%;
+    }
+    /*#sections{
         background-image: url(/img/wood.png);
         box-shadow: inset 0 0 15px black;
     }
@@ -526,7 +654,7 @@ body{
         justify-items: center;
         align-items: end;
 
-    }
+    }*/
     footer{
         display: grid;
         height: 20vh;
@@ -555,6 +683,10 @@ body{
         padding-bottom: 5%;
     }
 
+
+
+
+    
     /*ABOUT DESKTOP*/
     #header2{
         height: 10vh;
@@ -574,7 +706,7 @@ body{
         color: black;
         font-size: 3rem;
     }
-    #wrapper2{
+    .wrapper2{
         background-color: rgba(249,220,190);
         padding: 3%;
         box-shadow: inset 0 0 10px 2px black;
