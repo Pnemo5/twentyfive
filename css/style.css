@@ -230,8 +230,10 @@ body{
     /*ABOUT MOBILE*/
     #header2{
         height: 10vh;
-        /*display: grid;
-        grid-template-columns: 20vw 40vw 1fr;*/
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 5%;
         background-color: rgb(187, 163, 132);
     }
     #heading2{
@@ -487,9 +489,22 @@ body{
         margin-bottom: 5%;
     }
     .activities{
-        height: 40vh;
+        height: auto;
         box-shadow: inset 0 0 15px black;
         background-image: url(/img/wood.png);
+        padding: 5%;
+    }
+    .border_activities_text{
+        border: solid 2px rgb(187, 163, 132);
+        border-radius: 10%;
+        background-color: antiquewhite;
+        padding: 3%;
+    }
+    .activities_text{
+        background-color: rgba(249, 220, 190);
+        border: dotted 2px rgb(187, 163, 132);
+        border-radius: 10%;
+        padding: 3%;
     }
     #gallery{
         height: 100vh;
@@ -507,6 +522,8 @@ body{
         grid-area: pic1;
         background-color: green;
         transition: 500ms;
+        width: 100%;
+        height: 100%;
 
     }
     #gallery_pic1:hover{
@@ -519,7 +536,8 @@ body{
         grid-area: pic2;
         background-color: blue;
         transition: 500ms;
-
+        width: 100%;
+        height: 100%;
     }
     #gallery_pic2:hover{
         transform: scale(1.05);
@@ -530,6 +548,8 @@ body{
         grid-area: pic3;
         background-color: yellow;
         transition: 500ms;
+        width: 100%;
+        height: 100%;
     }
     #gallery_pic3:hover{
         transform: scale(1.05);
@@ -541,6 +561,8 @@ body{
         grid-area: pic4;
         background-color: purple;
         transition: 500ms;
+        width: 100%;
+        height: 100%;
     }
     #gallery_pic4:hover{
         transform: scale(1.05);
@@ -552,6 +574,8 @@ body{
         grid-area: pic5;
         background-color: orange;
         transition: 500ms;
+        width: 100%;
+        height: 100%;
     }
     #gallery_pic5:hover{
         transform: scale(1.05);
@@ -563,6 +587,8 @@ body{
         grid-area: pic6;
         background-color: green;
         transition: 500ms;
+        width: 100%;
+        height: 100%;
     }
     #gallery_pic6:hover{
         transform: scale(1.05);
@@ -865,7 +891,7 @@ body{
     
     /*ABOUT DESKTOP*/
     #header2{
-        height: 10vh;
+        height: 15vh;
         display: flex;
         justify-content: start;
         align-items: center;
@@ -1033,7 +1059,7 @@ body{
         'sc sc';
     }
     #header3{
-        height: 10vh;
+        height: 15vh;
         display: flex;
         justify-content: start;
         align-items: center;
@@ -1125,6 +1151,157 @@ body{
 
 
 
+
+
+
+
+
+    /*ACTIVITIES DESKTOP*/
+
+    #header4{
+        height: 15vh;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 5%;
+        background-color: rgb(187, 163, 132);
+    }
+    #heading4{
+        text-decoration: none;
+        color: black;
+        font-size: 250%;
+        align-self: center;
+    }
+    #wrapper4{
+        display: grid;
+        grid-template-columns: 70% 1fr;
+        grid-template-areas:
+        'gly con4';
+        box-shadow: inset 0 0 15px black;
+    }
+    #content4{
+        display: grid;
+        grid-template-columns: 50% 1fr;
+        grid-template-rows: 33% 33% 1fr;
+        margin: 5% 0% 5% 0%;
+
+    }
+    #gallery{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 16.5% 16.5% auto  16.5% 1fr;
+        grid-template-areas:
+        'pic1 pic1'
+        'pic3 pic3'
+        'pic4 pic4'
+        'pic5 pic2'
+        'pic6 pic2';
+
+    }
+    #gallery_pic1{
+        grid-area: pic1;
+        background-color: green;
+        transition: 500ms;
+        width: 100%;
+        height: 100%;
+
+    }
+    #gallery_pic1:hover{
+        transform: scale(1.05);
+        transition: 500ms;
+        box-shadow: 0 0 10px black;
+
+    }
+    #gallery_pic2{
+        grid-area: pic2;
+        background-color: blue;
+        transition: 500ms;
+        width: 100%;
+        height: 100%;
+    }
+    #gallery_pic2:hover{
+        transform: scale(1.05);
+        transition: 500ms;
+        box-shadow: 0 0 10px black;
+    }
+    #gallery_pic3{
+        grid-area: pic3;
+        background-color: yellow;
+        transition: 500ms;
+        width: 100%;
+        height: 100%;
+    }
+    #gallery_pic3:hover{
+        transform: scale(1.05);
+        transition: 500ms;
+        box-shadow: 0 0 10px black;
+
+    }
+    #gallery_pic4{
+        grid-area: pic4;
+        background-color: purple;
+        transition: 500ms;
+        width: 100%;
+        height: 100%;
+    }
+    #gallery_pic4:hover{
+        transform: scale(1.05);
+        transition: 500ms;
+        box-shadow: 0 0 10px black;
+
+    }
+    #gallery_pic5{
+        grid-area: pic5;
+        background-color: orange;
+        transition: 500ms;
+        width: 100%;
+        height: 100%;
+    }
+    #gallery_pic5:hover{
+        transform: scale(1.05);
+        transition: 500ms;
+        box-shadow: 0 0 10px black;
+
+    }
+    #gallery_pic6{
+        grid-area: pic6;
+        background-color: green;
+        transition: 500ms;
+        width: 100%;
+        height: 100%;
+    }
+    #gallery_pic6:hover{
+        transform: scale(1.05);
+        transition: 500ms;
+        box-shadow: 0 0 10px black;
+
+    }
+    .activities_wrapper{
+        height: auto;
+        padding: 3%;
+        background-color: rgb(187, 163, 132);
+
+    }
+    .activities{
+        height: auto;
+        box-shadow: inset 0 0 15px black;
+        background-image: url(/img/wood.png);
+        padding: 5%;
+        border-radius: 5%;
+    }
+    .border_activities_text{
+        border: solid 2px rgb(187, 163, 132);
+        border-radius: 10%;
+        background-color: antiquewhite;
+        padding: 3%;
+    }
+    .activities_text{
+        background-color: rgba(249, 220, 190);
+        border: dotted 2px rgb(187, 163, 132);
+        border-radius: 10%;
+        padding: 3%;
+    }
 
 }
 
