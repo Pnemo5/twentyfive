@@ -98,7 +98,7 @@ body{
         display: block;
     }
     #main1{
-        height: 30vh;
+        height: auto;
         display: grid;
         background-color: rgba(249,220,190);
 
@@ -113,7 +113,14 @@ body{
         margin: 0%;
         padding: 5%;
         text-align: center;
-
+    }
+    #kasjon_karta{
+        display: flex;
+        justify-self: center;
+        align-self: end;
+        border: solid 2px rgb(187, 163, 132);
+        width: 80%;
+        margin: 5%;
     }
     #shadow_box{
         padding: 3%;
@@ -261,7 +268,7 @@ body{
         background-image: url(/img/wood.png);
         box-shadow: inset 0 0 15px black;
     }
-    #kasjon_karta{
+    #img_about{
         width: 80%;
         justify-self: center;
         align-self: center;
@@ -658,31 +665,37 @@ body{
         justify-self: start;
     }
     #listchoices{
-        display: grid;
+        display: flex;
         width: 100vw;
-        flex-direction: column;
-        justify-content: stretch;
-        align-content: stretch;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: stretch;
         padding: 0%;
         margin: 0%;
     }
     .navchoice{
+        display: grid;
         text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
         color: black;
         font-family: 'Courier New', Courier, monospace;
-        border-top: solid black 2px;
-        padding: 2%;
+        border-right: solid black 1px;
+        border-left: solid black 1px;
+        width: 100%;
+        background-color: rgba(150,167,187);
+        transition: 300ms;
+
+    }
+    .navchoice:hover{
+        background-color: rgb(134, 152, 172);
+        transition: 300ms;
     }
     .menu{
-        background-color: rgba(150,167,187);
+
         display: flex;
-        position: fixed;
-        height: 100vh;
-        width: 20vw;
-        top: 0;
-        left: -100vw;
-        transition: left 0.3s;
-        z-index: 10;
+        height: 15vh;
     }
     .menu-button{
         grid-area: mn;
@@ -696,6 +709,7 @@ body{
     }
     #burgermenu {
         font-size: 60px;
+        display: none;
     }
     .show{
         left: 0;
@@ -720,12 +734,14 @@ body{
     #content1{
         height: auto;
         display: grid;
-        grid-template-columns: 40% 1fr;
+        grid-template-columns: 60% 1fr;
         background-color: rgb(187, 163, 132);
         box-shadow: inset 0 0 5px black;
     }
     #main1{
         margin: 3%;
+        display: grid;
+        grid-template-rows: 10% auto 1fr;
         height: auto;
         background-color: rgba(249,220,190);
 
@@ -740,7 +756,14 @@ body{
         margin: 0%;
         padding: 5%;
         text-align: center;
-
+    }
+    #kasjon_karta{
+        display: flex;
+        justify-self: center;
+        align-self: end;
+        border: solid 2px rgb(187, 163, 132);
+        width: 80%;
+        margin: 5%;
     }
     #shadow_box{
         padding: 2%;
@@ -795,7 +818,7 @@ body{
         box-shadow: 5px 0px 21px -10px black;
         justify-content: center;
         align-items: center;
-        margin: 7%;
+        margin: 4%;
         transition: 500ms;
     }
     .circletext:hover{
@@ -930,7 +953,7 @@ body{
         box-shadow: inset 0 0 15px black;
         padding: 2%;
     }
-    #kasjon_karta{
+    #img_about{
         height: 90%;
         align-self: center;
         justify-self: center;
